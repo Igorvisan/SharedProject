@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regions of the Netherlands</title>
+    <link rel="stylesheet" href="../views/css/greatTilburg.css">
+    <script src="https://kit.fontawesome.com/b30f0d5a09.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div class="fullBody">
+        <div class="topBar">
+            <div class="topBar-content">
+                <div class="sideBar-button" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="sideBar" id="sidebar">
+                <div class="menu">
+                    <div class="headSection">
+                        <h1 class="sideBar-title">MENU</h1>
+                        <div class="sideBar-close">
+                            <i class="fa-regular fa-xmark closeBar"></i>
+                        </div>
+                    </div>
+                    <div class="barContent">
+                        <ul class="menu-item">
+                            <li class="item"><a href="../views/index.html">HOME</a></li>
+                            <li class="item"><a href="tradiciones.html">TRADITIONS</a></li>
+                            <li class="item"><a href="comida.html">FOOD</a></li>
+                            <li class="item"><a href="great_Tilburg.html">ABOUT TILBURG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <header>
+                <h1>Regions of the Netherlands</h1>
+            </header>
+            <article>
+                <h2>North Holland</h2>
+                <p>North Holland, known for its capital Amsterdam, is a hub of innovation and culture. The region is famous for its museums, historic canals, and vibrant nightlife. It is also home to picturesque fishing villages and fields of blooming tulips.</p>
+            </article>
+            <article>
+                <h2>South Holland</h2>
+                <p>South Holland houses major cities like Rotterdam and The Hague. It is known for its stunning modern architecture, Europe's largest port, and North Sea beaches. The region is also a center for international politics and justice.</p>
+            </article>
+            <article>
+                <h2>Friesland</h2>
+                <p>Friesland is famed for its unique language and culture, as well as water sports and ice skating. The Frisian Islands offer beautiful beaches and pristine nature, making it a perfect destination for those seeking tranquility and outdoor activities.</p>
+            </article>
+            <article>
+                <h2>Zeeland</h2>
+                <p>Zeeland is known for its dikes and the battle against the sea. It's a paradise for seafood lovers, with fresh oysters and mussels as local specialties. The extensive beaches and historical fortresses attract tourists looking for history and recreation.</p>
+            </article>
+            <article>
+                <h2>Limburg</h2>
+                <p>Limburg is famous for its rolling landscape, unusual in the otherwise flat Netherlands. The region is culturally influenced by its neighbors Belgium and Germany, which is reflected in its cuisine, language, and festivities. Maastricht, its capital, is a city rich in history and culture.</p>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2024 Regions of the Netherlands</p>
+        </footer>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#sidebarToggle').click(function() {
+                $('#sidebar').toggleClass('side-bar_open');
+                $('#sidebar').is('.side-bar_open') ? $('#sidebar').show() : $('#sidebar').hide();
+            });
+            $('.closeBar').click(function() {
+                $('#sidebar').hide();
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../views/css/greatTilburg.css">
+    <title>Traditions of the Netherlands</title>
+    <script src="https://kit.fontawesome.com/b30f0d5a09.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div class="fullBody">
+        <div class="topBar">
+            <div class="topBar-content">
+                <div class="sideBar-button" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <nav class="sideBar" id="sidebar">
+                <div class="menu">
+                    <div class="headSection">
+                        <h1 class="sideBar-title">MENU</h1>
+                        <div class="sideBar-close">
+                            <i class="fa-regular fa-x closeBar"></i>
+                        </div>
+                    </div>
+                    <div class="barContent">
+                        <ul class="menu-item">
+                            <li class="item">
+                                <a href="/views/index.html">HOME</a>
+                            </li>
+                            <li class="item">
+                                <a href="/supplier/regiones.html">REGIONS</a>
+                            </li>
+                            <li class="item">
+                                <a href="/supplier/comida.html">FOOD</a>
+                            </li>
+                            <li class="item">
+                                <a href="/supplier/great_Tilburg.html">ABOUT TILBURG</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>        
+          <div>
+            <div class="titleSection">
+              <h1>Traditions of the Netherlands</h1>
+          </div>
+          </div>
+          <div class="article">
+            <div class="titleSection">
+                <h2>Sinterklaas</h2>
+            </div>
+            <div class="textSection">
+                <p>
+                    Sinterklaas is celebrated on 5 December in the Netherlands. It commemorates the arrival of St. Nicholas, who brings sweets and gifts.
+                </p>
+            </div>
+            <div class="imageSection">
+                <img src="https://tilburg.com/wp-content/uploads/2022/02/sinterklaasheader3.jpg" width="150" />
+            </div>
+        </div>
+        
+        <div class="article">
+            <div class="titleSection">
+                <h2>Koningsdag</h2>
+            </div>
+            <div class="textSection">
+                <p>
+                    Koningsdag is celebrated on April 27 in honor of King Willem-Alexander's birthday with street events, markets, and concerts.
+                </p>
+            </div>
+            <div class="imageSection">
+                <img src="https://images.ctfassets.net/3p0bn61n86ty/7t9YKhBLJuK427J2jiOlcf/e607a99aa4d2582b1a33490ae7fe4609/538-Koningsdag-2022-c-Radio-538.jpg" width="150" />
+            </div>
+        </div>
+        
+        <div class="article">
+            <div class="titleSection">
+                <h2>Volendam</h2>
+            </div>
+            <div class="textSection">
+                <p>
+                    The traditional Volendam dress includes dark and heavy skirts and white short-sleeved blouses for women, and dark trousers for men.
+                </p>
+            </div>
+            <div class="imageSection">
+                <img src="https://i.etsystatic.com/14397897/r/il/f667ae/1507401923/il_fullxfull.1507401923_oyvp.jpg" width="150"/>
+            </div>
+        </div>
+        
+        <div class="article">
+            <div class="titleSection">
+                <h2>Music and dances</h2>
+            </div>
+            <div class="textSection">
+                <p>
+                    The "klompendans" or clog dance is a lively Dutch dance performed in traditional wooden clogs.
+                </p>
+            </div>
+            <div class="imageSection">
+                <img src="https://www.dansisvooriedereen.nl/wp-content/uploads/2020/08/6220452236_c6bd871f8b_b-1-e1596709635384.jpg" width="150" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#sidebarToggle').click(function() {
+                $('#sidebar').toggleClass('side-bar_open');
+                $('#sidebar').is('.side-bar_open') ? $('#sidebar').show() : $('#sidebar').hide();
+            });
+            $('.closeBar').click(function() {
+                $('#sidebar').hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
