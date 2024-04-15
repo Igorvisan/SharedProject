@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b30f0d5a09.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="/views/css/Holanda.css">
+</head>
+
+<body>
+    <div class="fullBody">
+        <!--Top-bar start-->
+        <div class="topBar">
+            <div class="topBar-content">
+                <div class="sideBar-button" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="sideBar" id="sidebar">
+                <div class="menu">
+                    <div class="headSection">
+                        <h1 class="sideBar-title">MENU</h1>
+                        <div class="sideBar-close">
+                            <i class="fa-regular fa-x closeBar"></i>
+                        </div>
+                    </div>
+                    <div class="barContent">
+                        <ul class="menu-item">
+                            <li class="item">
+                                <a href="#">TRADITIONS</a>
+                            </li>
+                            <li class="item">
+                                <a href="#">FOOD</a>
+                            </li>
+                            <li class="item">
+                                <a href="#">REGIONS</a>
+                            </li>
+                            <li class="item">
+                                <a href="/supplier/great_Tilburg.html">ABOUT TILBURG</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Top-bar end-->
+        <div class="titleHolanda">
+            <div class="title">
+                <h1>NETHERLANDS</h1>
+            </div>
+        </div>
+        <div class="mainAttraction">
+            <div class="titleAttraction">
+                <h2>MAIN ATTRACTION</h2>
+            </div>
+            <div class="attractionText">
+                <span class="mainText">The Netherlands is a small state in western Europe,
+                    characterised by its lowland relief and a
+                    continental climate tempered by the influences of the Atlantic Ocean. Historically, the country was
+                    a colony of
+                    the House of Habsburg,
+                    kings of Spain, and fought for its independence between the 16th and 17th centuries. </span>
+            </div>
+        </div>
+        <div class="generalInfo">
+            <div class="generalTitle">
+                <h1>GENERAL INFORMATION ABOUT THE COUNTRY</h1>
+            </div>
+            <div class="generalText">
+                <div class="gTitle">
+                    <h4>Geography and Demographics</h4>
+                </div>
+                <div class="gtext">
+                    <p class="gtexto">The Netherlands is a nation located in northwestern Europe,
+                        bordered by the North Sea to the north and west, Belgium to the south and Germany to the east.
+                        In addition, the country includes island territories in the Caribbean such as Bonaire,
+                        Saba and Sint Eustatius. It is one of the most densely populated countries in the world,
+                        with much of its territory consisting of lowlands. The capital is Amsterdam,
+                        although the administration of the Kingdom of the Netherlands is located in The Hague.</p>
+                </div>
+                <div class="gTitle">
+                    <h4>Economy and Development</h4>
+                </div>
+                <div class="gtext">
+                    <p class="gtexto">The Netherlands is one of the most developed states, classified as "high-income"
+                        by the World Bank. In 2018, it ranked tenth in the United Nations Human Development Index.
+                        It is also recognised for one of the lowest levels of perceived corruption and
+                        is considered one of the most consolidated democracies in the world.</p>
+                </div>
+                <div class="gTitle">
+                    <h4>Safety and Services</h4>
+                </div>
+                <div class="gtext">
+                    <p class="gtexto">Although generally a safe country,
+                        it's important to be vigilant in large cities such as Amsterdam and Rotterdam,
+                        where bicycle theft and pickpocketing are common. Police,
+                        ambulance and fire services have a general emergency number 112.
+                        Port and airport security is handled by the Marechaussee,
+                        an independent gendarmerie. In most cities, there are municipal services with some police tasks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            $('.sideBar-button').click(function () {
+                $('.sideBar').toggleClass('side-bar_open');
+
+                if ($('.sideBar').hasClass('side-bar_open')) {
+                    $('.sideBar').show(); // Muestra el side-bar
+                } else {
+                    $('.sideBar').hide(); // Oculta el side-bar si no tiene la clase side-bar_open
+                }
+            });
+            $('.closeBar').click(function () {
+                $('.sideBar').toggleClass('side-bar_close');
+
+                if ($('.sideBar').hasClass('side-bar_close')) {
+                    $('.sideBar').hide(); //Oculta el side-bar al clickar en la 'X'
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

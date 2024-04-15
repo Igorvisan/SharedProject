@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,369;1,6..72,369&display=swap');
+*{
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 369;
+    font-style: normal;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body .fullBody{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.fullBody .topBar{
+    width: 100%;
+    height: 50px;
+}
+.fullBody .topBar .topBar-content{
+    width: 5%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+.fullBody .topBar .topBar-content .sideBar-button{
+    color: #5551FF;
+    padding: 5px 5px;
+    height: fit-content;
+    width: fit-content;
+}
+.fullBody .topBar .sideBar{
+    display: none;
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    width: 30%;
+    height: 100%;
+    z-index: 99;
+    background-color: #5551FF;
+    color: white;
+    overflow-y: scroll;
+    transition: 0.5s;
+}
+.sideBar .menu{
+    height: 100%;
+}
+.sideBar .menu .headSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+}
+.menu .headSection h1{
+    font-size: 25px;
+    width: 160px;
+    height: 30;
+    padding: 20px 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.headSection .sideBar-close{
+    width: 40px;
+    height: 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+}
+.headSection .sideBar-close .fa-x{
+    font-size: 20px;
+    cursor: pointer;
+}
+.sideBar .menu .barContent ul{
+    margin-top: 50px;
+    width: 90%;
+}
+.sideBar .menu .barContent ul li{
+    margin: 30px;
+    width: 100%;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transition: all 0.25s;
+}
+.sideBar .menu .barContent ul :hover{
+    background-color: white;
+    color: black;
+    letter-spacing: 0.3em;
+    font-size: 1.2em;
+}
+.sideBar .menu .barContent ul li a{
+    display: block;
+    padding: 25px 20px;
+    font-size: 20px;
+    width: 90%;
+    color: white;
+}
+.fullBody .titleHolanda{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+}
+.fullBody .titleHolanda a{
+    font-size: 30px;
+    color:#000000;
+}
+.fullBody .greatTilburg{
+    width: 100%;
+    height: 500px;
+    box-shadow: inset 6px 4px 50px 44px #000000;
+    background-image: url("../photos/tilburg.jpg");
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(50%);
+}
+.fullBody .greatTilburg .titleSection{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.fullBody .greatTilburg .titleSection h2{
+    position: absolute;
+    font-size: 25px;
+}
+.fullBody .mostRelevant{
+    margin-top: 60px;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fullBody .infor{
+    height: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fullBody .infor .inforTextBlock{
+    height: 1200px;
+    width: 80%;
+    border-top: #000000 1px solid;
+    padding: 30px 0;
+}
+.fullBody .infor .inforTextBlock .infoBox{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Esto es el valor predeterminado, pero es útil para claridad */
+    column-count: 2;
+    column-gap: 30px; /* Espacio entre las columnas */
+}
+.fullBody .infor .inforTextBlock .rocTilburg{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Esto es el valor predeterminado, pero es útil para claridad */
+    align-items: center;
+    justify-content: space-between;
+    column-count: 2;
+    column-gap: 100px; /* Espacio entre las columnas */
+    margin-top: 10%;
+    box-shadow: 0px 10px 13px -7px #000000, 0px -16px 14px 2px rgba(0,0,0,0.34);
+}
+.fullBody .infor .inforTextBlock .rocH{
+    height: 350px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row; /* Esto es el valor predeterminado, pero es útil para claridad */
+    align-items: center;
+    justify-content: center;
+    column-count: 2;
+    column-gap: 100px; /* Espacio entre las columnas */
+}
+.rocH .rocTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    font-weight: 1000;
+    font-size: 25px;
+    padding: 0 15px;
+    height: 100%;
+    text-transform: uppercase;
+}
+.rocH .rocT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 70%;
+    height: 100%;
+    padding: 0 15px;
+}
+.rocTilburg .rocTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    font-weight: 1000;
+    font-size: 35px;
+    padding: 0 15px;
+    height: 100%;
+}
+.rocTilburg .rocText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 70%;
+    height: 100%;
+    padding: 0 15px;
+}
+.infoBox .inforTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    font-size: 35px;
+    font-weight: 1000;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+.infoBox .inforText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+@keyframes fadeInUp {
+    from{
+        transform: translate3d(-100px,80px,0);
+    }
+    to{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(-100px,80px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
