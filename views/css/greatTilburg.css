@@ -186,6 +186,8 @@ body .fullBody{
     column-gap: 100px; /* Espacio entre las columnas */
     margin-top: 10%;
     box-shadow: 0px 10px 13px -7px #000000, 0px -16px 14px 2px rgba(0,0,0,0.34);
+    background-image: url("../photos/rocTilburg.jpg");
+    color:white;
 }
 .fullBody .infor .inforTextBlock .rocH{
     height: 350px;
